@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="header">模版</view>
+  <view class="template">
+    <image class="template-image" src="{{template.image_url}}" mode="widthFix"></image>
+    <text class="template-title">{{template.title}}</text>
+  </view>
+  <view class="header">待合成</view>
+  <view class="merge">
+    <view wx:if="{{mergeFilePath}}">
+      <image src="{{mergeFilePath}}" mode="widthFix" bindtap="handleImageChoose"></image>
+    </view>
+    <view wx:else>
+      <view class="merge-placeholder" bindtap="handleImageChoose">
+        选择要合成的图片，要求正脸无遮挡。
+      </view>
+    </view>
+  </view>
+</view>
+<view hidden="{{!mergedImage}}" class="modal">
+  <view class="modal-content">
+    <image src="{{mergedImage}}" mode="widthFix"></image>
+    <button bindtap="handleSaveImage" size="default" type="default" class="save">保存到相册</button>
+  </view>
+</view>

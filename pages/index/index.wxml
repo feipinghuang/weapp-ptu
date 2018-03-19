@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="template-list">
+    <view wx:for="{{templates}}" wx:key="unique" wx:for-item="template" class="template">
+      <navigator url="../merge_face/merge_face?id={{template.id}}" redirect="false" >
+        <image class="template-image" src="{{template.image_url}}" mode="widthFix"></image>
+        <text class="template-title">{{template.title}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+page {
+  font-size: 24rpx;
+}
+.container {
+  margin: 16rpx;
+}
+
+.header {
+  text-align: center;
+  padding: 16rpx;
+  font-size: 32rpx;
+}
+
+.merge-placeholder {
+  height: 240rpx;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+.modal {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  margin: 32rpx;
+  padding: 16rpx;
+  background: #fff;
+  border-radius: 12rpx;
+}
+
+.save {
+  margin: 32rpx auto;
+}

@@ -1,0 +1,27 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.template {
+  margin-bottom: 16rpx;
+  padding: 16rpx;
+  border-radius: 6rpx;
+  box-shadow: 1rpx 2rpx 2rpx rgba(0, 0, 0, 0.3);
+  background-color: #f1f1f1;
+}
+
+.template-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.template-title {
+  display: block;
+  padding-top: 16rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #333;
+}
